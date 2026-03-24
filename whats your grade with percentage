@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int p;
+printf("enter uour percentage: \n");
+scanf("%d",&p);
+if((p<100 && p>90))
+{
+    printf("YOUR HAVE SCORED GRADE A, HURRAY!");
+}
+else if((p<90 && p>80))
+{
+    printf("YOUR HAVE SCORED GRADE B, HURRAY!");
+}
+else if((p<80 && p>60))
+{
+    printf("YOUR HAVE SCORED GRADE C, HURRAY!");
+}
+else
+{
+    printf("YOUR HAVE SCORED GRADE D, HURRAY!");
+}
+return 0;
+}
