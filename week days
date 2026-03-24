@@ -1,0 +1,34 @@
+#include<stdio.h>
+ int main(){
+    int n,low,high,i,mid,key,found;
+    char a[7][20];
+printf("enter the no of week days: ");
+scanf("%d", &n);
+printf("enter %d days in sorted order: \n", n);
+for(int i=0;i<=6;i=i+1){
+    printf("DAY %d: ",i+1);
+    scanf(" %s", a[i]);
+}
+printf("enter the day no. to be search: ");
+scanf("%d", &key);
+low=1,high=n-1;
+while (low<=high){
+    mid=(low + high)/2;
+    if(a[mid]==key){
+        printf("%c is on the day %d\n", a[mid], mid);
+        found = 1;
+        break;
+    }
+    else if(a[mid]<key){
+       low=mid+1;
+    }
+    else{
+      high = mid-1;
+    }
+
+}
+if (found==0){
+    printf("day not found\n");
+}
+return 0;
+}
