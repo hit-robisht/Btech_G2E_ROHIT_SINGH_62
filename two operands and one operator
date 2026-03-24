@@ -1,0 +1,32 @@
+#include(stdio.h)
+int main(){
+    int n1,n2;
+    char op;
+printf("enter the two operators: \n");
+printf("enter the operator (+,*,/,-): \n");
+scanf("%d, %d", &n1, &n2);
+scanf("%c",&op);
+switch(n1,n2,op)
+
+{
+case '+':
+  result = n1+n2;
+  printf("result=%2f", result);
+  break;
+case '-':
+  result = n1-n2;
+  printf("result=%2f",result);
+  break;
+case '*':
+  result = n1*n2;
+  printf("result=%2f", result);
+  break;
+case '/':
+  result = n1/n2;
+  printf("result=%2f",result);
+  break;
+default:
+  printf("invalid character");
+}
+
+}
