@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int a,b,c:
+printf(" enter the coeffcient a1: \n");
+scanf("%d",&a);
+printf("enter the coeffcient b1: \n");
+scanf("%d",&b);
+printf("enter the coeffcient c1: \n");
+scanf("%d",&c);
+
+}
